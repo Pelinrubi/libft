@@ -6,13 +6,13 @@
 /*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 20:27:14 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/23 20:35:09 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/25 15:11:16 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main()
+int	main(void)
 {
 	return (0);
 }

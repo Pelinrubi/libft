@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 20:30:39 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/25 15:53:31 by algarci5         ###   ########.fr       */
+/*   Created: 2024/09/25 15:16:56 by algarci5          #+#    #+#             */
+/*   Updated: 2024/09/25 17:39:45 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-#include <stdio.h>
+#include "libft.h"
 
-int	ft_isalpha(int c);
+size_t	ft_strlcopy(char *dst, const char *src, size_t size)
+{
+	size_t	i;
+	size_t	len;
 
-int	ft_isdigit(int c);
-
-int	ft_isalnum(int c);
-
-#endif
+	i = 0;
+	len = 0;
+	while (src[len] != '\0')
+		len++;
+	if (size > 0)
+	{
+		while (i < size - 1 && src[i] != '\0')
+		{
+			dst[i] = src[i];
+			i++;
+		}
+		dst[i] = '\0';
+	}
+	return (len);
+}

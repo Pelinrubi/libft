@@ -1,23 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 20:30:39 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/25 15:53:31 by algarci5         ###   ########.fr       */
+/*   Created: 2024/09/25 14:40:45 by algarci5          #+#    #+#             */
+/*   Updated: 2024/09/25 15:17:31 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-#include <stdio.h>
+//#include <stdio.h>
 
-int	ft_isalpha(int c);
+#include "libft.h"
 
-int	ft_isdigit(int c);
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
-int	ft_isalnum(int c);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+/*int main(void)
+{
+	const char s[] = "hola";
+	size_t i;
 
-#endif
+	i = ft_strlen(s);
+	printf("%zu", i);
+}*/
