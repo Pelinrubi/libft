@@ -6,11 +6,9 @@
 /*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 14:40:45 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/25 15:17:31 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/26 14:56:46 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 #include "libft.h"
 
@@ -27,7 +25,7 @@ size_t	ft_strlen(const char *s)
 }
 /*int main(void)
 {
-	const char s[] = "hola";
+	const char s[] = "OWO";
 	size_t i;
 
 	i = ft_strlen(s);

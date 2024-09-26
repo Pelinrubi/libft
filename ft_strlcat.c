@@ -1,23 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
+/*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 20:30:39 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/25 19:23:54 by algarci5         ###   ########.fr       */
+/*   Created: 2024/09/26 17:38:29 by algarci5          #+#    #+#             */
+/*   Updated: 2024/09/26 17:41:55 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-# include <stdio.h>
+#include "libft.h"
 
-int	ft_isalpha(int c);
-
-int	ft_isdigit(int c);
-
-int	ft_isalnum(int c);
-
-#endif
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
+/*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 16:47:14 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/25 17:39:22 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/26 17:39:43 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 int	ft_isascii(int c)
 {
-	if ((c <= 31) || (c <= 256))
-	{
-		return (0);
-	}
-	return (1);
+	return ((c >= 00) && (c <= 126));
 }
+
+/*int main(void)
+{
+	int	a = 2;
+
+	printf("%d", ft_isascii(a));
+}*/
