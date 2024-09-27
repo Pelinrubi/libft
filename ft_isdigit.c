@@ -6,7 +6,7 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 19:28:03 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/26 17:42:49 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/27 20:06:12 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isdigit(int c)
 
 /*int main(void)
 {
-	int	a = '2';
+	int	a = 'v';
 
 	printf("%d", ft_isdigit(a));
 }*/

@@ -1,39 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 17:38:29 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/27 19:23:04 by algarci5         ###   ########.fr       */
+/*   Created: 2024/09/26 19:24:36 by algarci5          #+#    #+#             */
+/*   Updated: 2024/09/26 19:48:48 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
+char	*ft_strchr(const char *s, int c)
 {
-	char	*len;
-
-	len = dest;
-	while (*len != '\0')
-		len++;
-	while (*src != '\0' && size > 1)
+	while (*s != '\0')
 	{
-		*len = *src;
-		len++;
-		src++;
-		size--;
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
 	}
-	*len = '\0';
-	return ((size_t)dest);
+	if (c == '\0')
+		return ((char *)s);
+	return (NULL);
 }
-/*int	main(void)
+/*int main()
 {
-	char	src[] = "mundo";
-	char	dest[30] = "Hola ";
+    const char str[] = "Hello, World!";
+    char *result = ft_strchr(str, 'W');
 
-	ft_strlcat(dest, src, 10);
-	printf("%d", dest);
+    if (result)
+        printf("Character found: %c\n", *result);
+    else
+        printf("Character not found\n");
+
+    return 0;
 }*/
