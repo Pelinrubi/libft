@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: algarci5 <algarci5@student.42.fr>          +#+  +:+       +#+        */
+/*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 16:30:20 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/26 16:47:20 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/28 14:03:16 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	i = (const unsigned char *)s1;
 	j = (const unsigned char *)s2;
-	while (n > 0)
+	while (n > 0 && *i || *j)
 	{
 		if (*i != *j)
 			return (*i - *j);
@@ -32,16 +32,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 /*int main()
 {
     char s1[] = "Hola";
-    char s2[] = "Hola mundo";
+    char s2[] = "Hol";
 
     int result = ft_memcmp(s1, s2, 7);
-
-    if (result == 0)
-        printf("Los bloques de memoria son iguales.\n");
-    else if (result < 0)
-        printf("El primer bloque es menor que el segundo.\n");
-    else
-        printf("El primer bloque es mayor que el segundo.\n");
-
-    return 0;
+	printf("%d", result);
 }*/
