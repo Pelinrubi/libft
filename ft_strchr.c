@@ -6,7 +6,7 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 19:24:36 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/26 19:48:48 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/28 14:14:34 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,12 @@ char	*ft_strchr(const char *s, int c)
 /*int main()
 {
     const char str[] = "Hello, World!";
-    char *result = ft_strchr(str, 'W');
+    char *result = ft_strrchr(str, 's');
 
     if (result)
-        printf("Character found: %c\n", *result);
+        printf("Primero encontrado: %c\n", *result);
     else
-        printf("Character not found\n");
+        printf("No encontrado\n");
 
     return 0;
 }*/

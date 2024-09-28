@@ -6,7 +6,7 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 19:51:34 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/27 15:48:57 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/09/28 15:01:18 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 }
 /*int main()
 {
-	char	s1[] = "31";
-	char 	s2[] = "311";
+	char	s1[] = "11";
+	char 	s2[] = "31";
 	int	result = ft_strncmp(s1, s2, 10);
 	printf("%d", result);
 	return (0);
