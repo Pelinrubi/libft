@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 17:55:11 by algarci5          #+#    #+#             */
-/*   Updated: 2024/10/01 17:14:10 by algarci5         ###   ########.fr       */
+/*   Created: 2024/10/01 15:22:58 by algarci5          #+#    #+#             */
+/*   Updated: 2024/10/01 16:28:24 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_itoa(int n)
 {
-	ft_memset(s, 0, n);
+	char *s;
+
+	s = (char*)malloc((ft_strlen(n) * sizeof(char) + 1));
+	if(!s)
+		return (NULL);
+	
 }
