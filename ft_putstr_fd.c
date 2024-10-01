@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 13:30:29 by algarci5          #+#    #+#             */
-/*   Updated: 2024/10/01 18:07:34 by algarci5         ###   ########.fr       */
+/*   Created: 2024/10/01 17:44:08 by algarci5          #+#    #+#             */
+/*   Updated: 2024/10/01 17:48:09 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(int c)
+void ft_putstr_fd(char *s, int fd)
 {
-	if ((c >= 32) && (c <= 126))
+	size_t i;
+
+	i = 0;
+	while (s[i])
 	{
-		return (1);
+		ft_putstr_fd(s[i], fd);
+		i++;
 	}
-	return (0);
 }
