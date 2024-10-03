@@ -6,13 +6,15 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 20:30:39 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/28 20:39:43 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/10/03 20:27:57 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdio.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 
@@ -59,5 +61,19 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 
 int		ft_toupper(int c);
+
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+char	*ft_strjoin(char const *s1, char const *s2);
+
+char	*ft_strtrim(char const *s1, char const *set);
+
+char	*ft_itoa(int n);
+
+void	ft_putchar_fd(char c, int fd);
+
+void	ft_putstr_fd(char *s, int fd);
+
+void	ft_putendl_fd(char *s, int fd);
 
 #endif

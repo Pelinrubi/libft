@@ -6,7 +6,7 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 17:38:29 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/28 19:43:44 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/10/03 19:23:36 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,30 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	char	*len;
+	size_t	i;
+	size_t	len_dest;
+	size_t	len_src;
 
-	len = dest;
-	while (*len != '\0')
-		len++;
-	while (*src != '\0' && size > 1)
+	len_dest = ft_strlen(dest);
+	len_src = ft_strlen(src);
+	i = 0;
+	if (size < (len_dest + 1))
+		return (size + len_src);
+	while (src[i] != '\0' && (len_dest + i) < size - 1)
 	{
-		*len = *src;
-		len++;
-		src++;
-		size--;
+		dest[len_dest + i] = src[i];
+		i++;
 	}
-	*len = '\0';
-	return ((size_t)dest);
+	dest[len_dest + i] = '\0';
+	return (len_dest + len_src);
 }
 /*int	main(void)
 {
-	char	src[] = "mundo";
-	char	dest[30] = "Hola ";
-
-	ft_strlcat(dest, src, 10);
-	printf("%d", dest);
+	// char	src[] = "mundo";
+	// char	dest[30] = "Hola ";
+// 
+	// ft_strlcat(dest, src, 10);
+	// printf("%d", dest);
+	// char *str1[10] = "hola";
+	// ft_strlcat("pqrs", "abcdefghi", 11);
 }*/

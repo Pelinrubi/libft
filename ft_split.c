@@ -6,7 +6,7 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:43:06 by algarci5          #+#    #+#             */
-/*   Updated: 2024/09/30 18:43:45 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/10/03 20:26:30 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 char	**ft_split(char const *s, char c)
 {
-	
+	return (0);
 }
