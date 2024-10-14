@@ -6,7 +6,7 @@
 /*   By: algarci5 <algarci5@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:43:06 by algarci5          #+#    #+#             */
-/*   Updated: 2024/10/04 17:11:16 by algarci5         ###   ########.fr       */
+/*   Updated: 2024/10/14 18:58:59 by algarci5         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,11 @@ static size_t	word_count(const char *s, char c)
 
 static char	*ft_strndup(const char *s, size_t n)
 {
-	size_t	len;
 	size_t	i;
 	char	*dup;
 
 	i = 0;
-	len = ft_strlen(s);
-	dup = (char *)malloc((len + 1) * sizeof(char));
+	dup = (char *)malloc(n * sizeof(char) + 1);
 	if (!dup)
 		return (NULL);
 	while (s[i] && (i < n))
